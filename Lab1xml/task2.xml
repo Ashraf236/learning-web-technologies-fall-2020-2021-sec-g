@@ -1,0 +1,22 @@
+<college>
+    
+    <addmission>
+        <sl.no.>23</sl.no.>
+        <name>jhon carter</name>
+        <admissiondate>25/12/2015</admissiondate>
+    </addmission>
+    
+    <addmission>
+        <sl.no.>29</sl.no.>
+        <name>Bob Marshal</name>
+        <admissiondate>13/01/1999</admissiondate>
+    </addmission>
+    
+    <addmission>
+        <sl.no.>35</sl.no.>
+        <name>Clark Kent</name>
+        <admissiondate>17/06/2005</admissiondate>
+    </addmission>
+    
+    
+</college>
