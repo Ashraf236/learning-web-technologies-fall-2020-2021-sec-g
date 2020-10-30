@@ -1,3 +1,10 @@
+<?php
+   if(isset($_POST['submit'])){
+
+     $bloodGroup = $_POST['bloodGroup'];
+    	echo $bloodGroup;
+   }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +14,7 @@
 <body>
      <fieldset style="width:200px">
      	 <legend>Blood Group</legend>
-        <form method="post" action="bloodGroupCheck.php">    
+        <form method="post">    
            
             <select name="bloodGroup" >
 				<option value="A+">A+</option>

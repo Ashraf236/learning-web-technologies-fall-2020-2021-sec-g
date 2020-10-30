@@ -1,10 +1,8 @@
 <?php
-
-	if(isset($_POST['submit'])){
-		$name = $_POST['email'];
-		echo $name;
-	}
-
+   if(isset($_POST['submit'])){
+   	  $name = $_POST['email'];
+   	  echo $name;
+   }
 ?>
 
 
@@ -14,13 +12,14 @@
 	<title>EMAIL</title>
 </head>
 <body>
-	<form method="post" >
-		<fieldset>
-			<legend>Email</legend>
+	<form method = "POST">
+		<fieldset >
+			<legend>Email Input</legend>
 			<input type="text" name="email" value="">
 			<hr/>
 			<input type="submit" name="submit" value="Submit">
 		</fieldset>
 	</form>
+
 </body>
-</html> 
+</html>

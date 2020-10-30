@@ -1,3 +1,11 @@
+<?php
+   if(isset($_POST['submit'])){
+      $name = $_POST['dob'];
+      echo "yy-mm-dd"."<br>";
+      echo $name;
+   }
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +17,7 @@
             
         <legend><b>Date of Birth</b></legend>
         <pre>mm/   dd   /   yyyy</pre>
-        <form method="POST" action="dobCheck.php">
+        <form method="POST">
 
             <input type="date" name="dob" value="" =""> <br>
             <hr>

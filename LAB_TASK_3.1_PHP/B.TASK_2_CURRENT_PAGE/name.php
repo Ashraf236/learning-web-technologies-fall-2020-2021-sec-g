@@ -1,10 +1,8 @@
 <?php
-
-	if(isset($_POST['submit'])){
-		$name = $_POST['name'];
-		echo $name;
-	}
-
+   if(isset($_POST['submit'])){
+   	$name = $_POST['name'];
+   	echo $name;
+   }
 ?>
 
 
@@ -14,7 +12,7 @@
 	<title>Name Input</title>
 </head>
 <body>
-	<form method="post" >
+	<form method="post">
 		<fieldset>
 			<legend>Name</legend>
 			<input type="text" name="name" value="">
@@ -23,4 +21,4 @@
 		</fieldset>
 	</form>
 </body>
-</html> 
+</html>
