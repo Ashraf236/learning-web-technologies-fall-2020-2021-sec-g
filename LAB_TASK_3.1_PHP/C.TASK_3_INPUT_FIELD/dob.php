@@ -19,13 +19,7 @@
         <pre>mm/   dd   /   yyyy</pre>
         <form method="POST">
 
-            <input type="date" name="dob" value="<?php
-                  if(isset($_POST['submit'])){
-                  $name = $_POST['dob'];
-                  echo "yy-mm-dd"."<br>";
-                  echo $name;
-                  }
-                  ?>"> <br>
+            <input type="date" name="dob" value="" =""> <br>
             <hr>
             <input type="submit" name="submit" id="" value="Submit">
         </form>          

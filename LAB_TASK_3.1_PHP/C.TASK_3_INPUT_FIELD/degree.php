@@ -1,17 +1,24 @@
 <?php
-   if(isset($_POST['degree']))
+        if(isset($_POST['submit']))
    {     
-        $degree = $_POST['degree'];  
+        if(!empty($_POST['degree'])&&is_array($_POST['degree']))
+        {  
  
-        foreach ($_POST['degree'] as $key => $value)
-        {
-            echo "$value<br>";
+             foreach ($_POST['degree'] as $checked)
+             {
+                 
+                 echo $checked.'<br>';
+                
+             }
         }
+        else
+         {
+           echo 'Select at least one degree';
+         }
+
+        
     } 
-    else
-    {
-        echo 'Select at least one degree';
-    }
+    
 ?>
 
 <!DOCTYPE html>
