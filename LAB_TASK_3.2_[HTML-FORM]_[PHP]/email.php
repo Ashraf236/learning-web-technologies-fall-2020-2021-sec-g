@@ -1,17 +1,26 @@
 <?php
-   if(isset($_POST['submit'])){
+   $email="";
+
+   if(isset($_POST['email'])){
    	  
         if(!empty($_POST['email']))
         {
         	$email = $_POST['email'];
+          if(!filter_var($email,FILTER_VALIDATE_EMAIL))
+          {
+            echo "Invalid email address";
+          }
+          else{
    	        echo $email;
-        }
+          }
+          }
+        
         else
         {
         	echo "Enter your email address. Cannot be empty";
+ 
         }
-   	  
-   }
+}
 ?>
 
 
@@ -26,7 +35,7 @@
 			<h1>Email Input</h1>
 			 <tr>
 			 	<td>
-			      <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" value=""><br><br>
+			      <input type="email" name="email" value=""><br><br>
 			     <input type="submit" name="submit" value="Submit">
 		        </td>
 		     </tr>   

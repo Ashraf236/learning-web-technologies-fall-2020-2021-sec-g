@@ -19,7 +19,7 @@
         <pre>mm/   dd   /   yyyy</pre>
         <form method="POST">
 
-            <input type="date" name="dob" value="" =""> <br>
+            <input type="date" data-date-format="DD/MM/YYYY" name="dob" value="" =""> <br>
             <hr>
             <input type="submit" name="submit" id="" value="Submit">
         </form>          

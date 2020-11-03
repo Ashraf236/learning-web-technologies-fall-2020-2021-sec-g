@@ -1,11 +1,21 @@
 <?php
-    if(isset($_POST['submit']))
+    $name ="";
+
+    if(isset($_POST['name']))
     //checking name
     {
     	if(!empty($_POST['name'])&&strlen($_POST['name'])>2)
     	{
-    		$name = $_POST['name'];
-    		echo $name;
+    		 $name = $_POST['name'];
+            if(!preg_match("/^[a-zA-Z][a-zA-Z.-]*$/", $name)){
+    		     
+                 echo "Error: not a valid name,must be start with letter, no numbers allowed  ";
+
+            }
+            else
+            {
+                echo $name;
+            }
     	}
     	
     	else
@@ -31,7 +41,7 @@
 			<h1>Name</h1>
 			<tr>
 				<td>
-			       <input type="text" name="name" pattern="[a-zA-Z][a-zA-Z-_/]+" value=""> <br><br>
+			       <input type="text" name="name" value=""> <br><br>
 			       <input type="submit" name="submit" value="Submit">
 			    </td>
 			</tr>      

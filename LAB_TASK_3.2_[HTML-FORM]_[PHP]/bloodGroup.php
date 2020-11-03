@@ -1,6 +1,6 @@
 <?php
      $bloodGroup="";
-   if(isset($_POST['submit'])){
+   if(isset($_POST['bloodGroup'])){
 
      if(!empty($_POST['bloodGroup']))
      {
@@ -27,14 +27,14 @@
            
             <select name="bloodGroup" >
               <option value=></option>
-				<option value="A+" <?php if($bloodGroup=="A+"){print 'selected';}?>>A+</option>
-				<option value="A-" <?php if($bloodGroup=="A-"){print 'selected';}?>>A-</option>
-				<option value="B+" <?php if($bloodGroup=="B+"){print 'selected';}?>>B+</option>
-				<option value="B-"<?php if($bloodGroup=="B-"){print 'selected';}?>>B-</option>
-				<option value="AB+"<?php if($bloodGroup=="AB+"){print 'selected';}?>>AB+</option>
-				<option value="AB-"<?php if($bloodGroup=="AB-"){print 'selected';}?>>AB-</option>
-				<option value="O+" <?php if($bloodGroup=="O+"){print 'selected';}?>>O+</option>
-				<option value="O-"<?php if($bloodGroup=="O-"){print 'selected';}?>>O-</option>
+				<option value="A+">A+</option>
+				<option value="A-">A-</option>
+				<option value="B+">B+</option>
+				<option value="B-">B-</option>
+				<option value="AB+">AB+</option>
+				<option value="AB-">AB-</option>
+				<option value="O+">O+</option>
+				<option value="O-">O-</option>
 			</select>
 			<hr>
            <input type="submit" name="submit"value="submit">

@@ -3,7 +3,7 @@
    $gender="";
 
 
-   if(isset($_POST['submit'])){
+   if(isset($_POST['gender'])){
 
      if(!empty($_POST['gender']))
      {
