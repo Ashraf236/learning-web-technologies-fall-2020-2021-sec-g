@@ -13,6 +13,11 @@
 		if($_GET['msg'] == "null_password"){
 			echo "Password field is empty...";
 		}
+
+		if($_GET['msg'] == "user_deleted"){
+			echo "USER DELETED. LOGIN AGAIN OR REGISTER..";
+			include('../php/logout.php');
+		}
 	}
 
 	/*if(isset($_COOKIE['rm'])){

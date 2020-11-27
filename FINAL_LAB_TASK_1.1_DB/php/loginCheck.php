@@ -1,5 +1,5 @@
 <?php
-	
+
 	require_once('../db/db.php');
 
 	if(isset($_POST['submit'])){
@@ -25,6 +25,8 @@
 			$row = mysqli_fetch_assoc($result);
 
 			if(count($row) > 0){
+				session_start();
+				$_SESSION['username']  = $uname;
 				setcookie('isValid', 'true', time()+3600, '/');
 				header('location: ../view/home.php');
 			}else{
