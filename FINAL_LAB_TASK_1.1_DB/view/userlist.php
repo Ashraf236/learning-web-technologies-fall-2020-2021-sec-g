@@ -38,11 +38,7 @@
 				<td><?=$data['email']?></td>
 				<td><?=$data['type']?></td>
 				<td>
-					<?php
-				
-
-					?>
-					<a href="edit.php?id=<?=$data['id']?>">EDIT</a> | 
+					<a href="edit.php?id=<?=$data['id']?>">EDIT</a> |
 					<a href="delete.php?id=<?=$data['id']?>">DELETE</a>
 				</td>
 			</tr>
