@@ -79,7 +79,7 @@
 	function insertUser($user){
 
 		$conn = getConnection();
-		$sql = "insert into employer values('', '{$user['username']}', '{$user['password']}', '{$user['email']}', '{$user['type']}')";
+		$sql = "insert into employer values('{$user['employerName']}','{$user['companyName']}', '{$user['contactNo']}','{$user['userName']}', '{$user['password']}', '{$user['userType']}')";
 
 		$status = mysqli_query($conn, $sql);
 		
