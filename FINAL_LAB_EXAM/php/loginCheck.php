@@ -27,6 +27,7 @@
 			if(count($row) > 0){
 				session_start();
 				$_SESSION['username']  = $uname;
+				$_SESSION['usertype']  = $row['usertype'];
 				setcookie('isValid', 'true', time()+3600, '/');
 				header('location: ../view/home.php');
 			}else{
